@@ -46,7 +46,7 @@ So the whole circuit looks like this:
 
 The reason why these input sources were selected is because with this specific combination of parameters we obtain 2 sine waves between the values 0-1V which are always greater than one another except for their crossing-point.
 
-![plots_inputs](https://github.com/tsoukias/VLSI-Systems-Design-2019-2020/Graphs_Results/plots/Inputs_white.png)
+![plots_inputs](https://github.com/tsoukias/VLSI-Systems-Design-2019-2020/blob/main/Graphs_Results/plots/Inputs_white.png)
 
 Whereas the plotting of all the variables together gives us:
 
