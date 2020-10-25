@@ -1,0 +1,173 @@
+\o Program:		@(#)$CDS: cdsLibEditor version 6.1.7 - CAT35 10/18/2015 00:07 (sjfnl678) $
+\o Sub version:		sub-version  p009 
+\o Arguments:		-mpssession virtuoso9724 -mpshost labd-12 
+\o Working Directory:	labd-12:/software/cadence/users/user22/Desktop
+\o 64-bit offsets
+\a nrSetWindowVisibility(cdsLibEditor "show")
+\o Qt version: 		4.8.5
+\a nrListItemAction(cdsLibEditor->mainTable 0 0)
+\o Active cell: 0 0 ""
+\o QUESTION (CLE-232): You must choose one edit format for your new file to continue editing.\n\nMost Cadence tools use only "cds.lib" for the library definition list.\nCadence "cds.lib" is the recommended edit format.\n\nYour edit format choice remains in effect until the new file is saved. 
+\o QUESTION (CLE-233): Cadence Library Path Editor enables saving your edits in either format\nwhen using the "Save As" command. 
+\a nrSetWindowVisibility(newEditFormatDialog "show")
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrSetCurrentWindow(newEditFormatDialog)
+\a nrResizeWindow(cdsLibEditor list(0 24 500 400))
+\a nrResizeWindow(newEditFormatDialog list(45 80 411 315))
+\a newEditFormatDialog->okButton->value = t
+\a nrSetCurrentWindow(cdsLibEditor)
+\a cdsLibEditor->fileOpenButton->value = t
+\o INFO (CLE-137): Open both files to edit the union of library definition lists used by Cadence tools. 
+\o INFO (CLE-139): Most Cadence tools use only "cds.lib" for the library definition list.\n\nEditing "lib.defs" is optional for use with other programs.                                        
+\a fileOpenGroupDialog->openLibDefsCheckBox->value = nil
+\a fileOpenGroupDialog->openCdsLibText->value = "/software/cadence/installs/IC617/share/cdssetup/cds.lib"
+\a fileOpenGroupDialog->openLibDefsText->value = "lib.defs"
+\a fileOpenGroupDialog->openLibDefsText->value = ""
+\a nrSetWindowVisibility(fileOpenGroupDialog "show")
+\a nrSetCurrentWindow(fileOpenGroupDialog)
+\a nrResizeWindow(fileOpenGroupDialog list(5 109 490 228))
+\a fileOpenGroupDialog->okButton->value = t
+\o WARNING (CLE-120): The file "/software/cadence/installs/IC617/share/cdssetup/cds.lib" is read only. 
+\a nrSetWindowVisibility(errorDialog "show")
+\a nrSetCurrentWindow(errorDialog)
+\a nrResizeWindow(errorDialog list(181 144 477 122))
+\a errorDialog->errorOkButton->value = t
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrListItemAction(cdsLibEditor->mainTable 8 0)
+\o Active cell: 8 0 ""
+\a cdsLibEditor->editAddLibButton->value = t
+\a newLibraryDialog->filePathComboBox->value = "/software/cadence/users/user22/Desktop"
+\a newLibraryDialog->filePathComboBox->value = "/software/cadence/installs/IC617/share/cdssetup"
+\a newLibraryDialog->useMappedName->value = nil
+\a nrSetWindowVisibility(newLibraryDialog "show")
+\a nrSetCurrentWindow(newLibraryDialog)
+\a nrResizeWindow(newLibraryDialog list(0 24 531 513))
+\a newLibraryDialog->dirListWidget->value = ".."
+\a newLibraryDialog->filePathComboBox->value = "/software/cadence/installs/IC617/share/cdssetup/.."
+\a nrListItemAction(newLibraryDialog->dirListWidget 0 0)
+\a newLibraryDialog->filePathComboBox->value = "/software/cadence/installs/IC617/share"
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = ".."
+\a newLibraryDialog->filePathComboBox->value = "/software/cadence/installs/IC617/share/.."
+\a nrListItemAction(newLibraryDialog->dirListWidget 0 0)
+\a newLibraryDialog->filePathComboBox->value = "/software/cadence/installs/IC617"
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = ".."
+\a newLibraryDialog->filePathComboBox->value = "/software/cadence/installs/IC617/.."
+\a nrListItemAction(newLibraryDialog->dirListWidget 0 0)
+\a newLibraryDialog->filePathComboBox->value = "/software/cadence/installs"
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = ".."
+\a newLibraryDialog->filePathComboBox->value = "/software/cadence/installs/.."
+\a nrListItemAction(newLibraryDialog->dirListWidget 0 0)
+\a newLibraryDialog->filePathComboBox->value = "/software/cadence"
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = "gpdk045_v_4_0"
+\a newLibraryDialog->filePathComboBox->value = "/software/cadence/gpdk045_v_4_0"
+\a nrListItemAction(newLibraryDialog->dirListWidget 4 0)
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->libraryListBox->value = "gpdk045"
+\a newLibraryDialog->useMappedName->value = t
+\a newLibraryDialog->libraryName->value = "gpdk045"
+\a newLibraryDialog->okButton->value = t
+\a newLibraryDialog->libraryListBox->value = nil
+\a newLibraryDialog->useMappedName->value = nil
+\a newLibraryDialog->libraryName->value = ""
+\a nrListItemAction(cdsLibEditor->mainTable 9 0)
+\o Active cell: 9 0 ""
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrResizeWindow(cdsLibEditor list(570 133 500 400))
+\a cdsLibEditor->fileExitButton->value = t
+\o QUESTION (CLE-205): You have made changes which have not been saved. \n\nWould you like to save your changes? 
+\a nrSetWindowVisibility(needSaveDialog "show")
+\a nrSetCurrentWindow(needSaveDialog)
+\a nrResizeWindow(needSaveDialog list(636 249 369 136))
+\a needSaveDialog->yesButton->value = t
+\a saveAsGroupDialog->saveAsLibDefsCheckBox->value = nil
+\a saveAsGroupDialog->unionUsageRadioB->value = nil
+\a saveAsGroupDialog->saveAsCdsLibText->value = "/software/cadence/installs/IC617/share/cdssetup/cds.lib"
+\a nrSetWindowVisibility(saveAsGroupDialog "show")
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrSetCurrentWindow(saveAsGroupDialog)
+\a nrResizeWindow(saveAsGroupDialog list(556 171 528 369))
+\a saveAsGroupDialog->okButton->value = t
+\o ERROR (CLE-162): \n    "/software/cadence/installs/IC617/share/cdssetup/cds.lib"    \n\nIt can't be locked for edit. 
+\a nrSetWindowVisibility(badFileSaveDialog "show")
+\a nrSetCurrentWindow(badFileSaveDialog)
+\a nrResizeWindow(badFileSaveDialog list(633 238 375 168))
+\a badFileSaveDialog->okButton->value = t
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrSetCurrentWindow(saveAsGroupDialog)
+\a saveAsGroupDialog->cancelButton->value = t
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrListItemAction(cdsLibEditor->mainTable 8 1)
+\o Active cell: 8 1 "/software/cadence/gpdk045_v_4_0/gpdk045"
+\a nrListItemAction(cdsLibEditor->mainTable 9 0)
+\o Active cell: 9 0 ""
+\a nrListItemAction(cdsLibEditor->mainTable 8 0)
+\o Active cell: 8 0 "gpdk045"
+\a nrListItemAction(cdsLibEditor->mainTable 8 1)
+\o Active cell: 8 1 "/software/cadence/gpdk045_v_4_0/gpdk045"
+\a nrSetCurrentWindow(cdsLibEditor)
+\a cdsLibEditor->editAddLibButton->value = t
+\a newLibraryDialog->filePathComboBox->value = "/software/cadence/installs/IC617/share/cdssetup"
+\a nrSetWindowVisibility(newLibraryDialog "show")
+\a nrSetCurrentWindow(newLibraryDialog)
+\a nrResizeWindow(newLibraryDialog list(555 124 531 513))
+\a newLibraryDialog->dirListWidget->value = ".."
+\a newLibraryDialog->filePathComboBox->value = "/software/cadence/installs/IC617/share/cdssetup/.."
+\a nrListItemAction(newLibraryDialog->dirListWidget 0 0)
+\a newLibraryDialog->filePathComboBox->value = "/software/cadence/installs/IC617/share"
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = ".."
+\a newLibraryDialog->filePathComboBox->value = "/software/cadence/installs/IC617/share/.."
+\a nrListItemAction(newLibraryDialog->dirListWidget 0 0)
+\a newLibraryDialog->filePathComboBox->value = "/software/cadence/installs/IC617"
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = ".."
+\a newLibraryDialog->filePathComboBox->value = "/software/cadence/installs/IC617/.."
+\a nrListItemAction(newLibraryDialog->dirListWidget 0 0)
+\a newLibraryDialog->filePathComboBox->value = "/software/cadence/installs"
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = ".."
+\a newLibraryDialog->filePathComboBox->value = "/software/cadence/installs/.."
+\a nrListItemAction(newLibraryDialog->dirListWidget 0 0)
+\a newLibraryDialog->filePathComboBox->value = "/software/cadence"
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = "gpdk045_v_4_0"
+\a newLibraryDialog->filePathComboBox->value = "/software/cadence/gpdk045_v_4_0"
+\a nrListItemAction(newLibraryDialog->dirListWidget 4 0)
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->cancelButton->value = t
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrListItemAction(cdsLibEditor->mainTable 8 0)
+\o Active cell: 8 0 "gpdk045"
+\a cdsLibEditor->fileExitButton->value = t
+\o QUESTION (CLE-205): You have made changes which have not been saved. \n\nWould you like to save your changes? 
+\a nrSetWindowVisibility(needSaveDialog "show")
+\a nrSetCurrentWindow(needSaveDialog)
+\a nrResizeWindow(needSaveDialog list(636 249 369 136))
+\a needSaveDialog->yesButton->value = t
+\a saveAsGroupDialog->saveAsLibDefsCheckBox->value = t
+\a saveAsGroupDialog->soloUsageRadioB->value = nil
+\a saveAsGroupDialog->unionUsageRadioB->value = t
+\a saveAsGroupDialog->soloIncludeXtraCheckBox->value = nil
+\a saveAsGroupDialog->saveAsCdsLibText->value = "cds.lib"
+\a saveAsGroupDialog->saveAsLibDefsCheckBox->value = nil
+\a saveAsGroupDialog->unionUsageRadioB->value = nil
+\a saveAsGroupDialog->saveAsCdsLibText->value = "/software/cadence/installs/IC617/share/cdssetup/cds.lib"
+\a nrSetWindowVisibility(saveAsGroupDialog "show")
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrSetCurrentWindow(saveAsGroupDialog)
+\a nrResizeWindow(saveAsGroupDialog list(556 171 528 369))
+\a saveAsGroupDialog->saveAsCdsLibBrowse->value = t
+\a saveAsCdsLibFileDialog->fileNameEdit->value = "cds.lib"
+\a nrSetWindowVisibility(saveAsCdsLibFileDialog "show")
+\a nrSetCurrentWindow(saveAsCdsLibFileDialog)
+\a nrResizeWindow(saveAsCdsLibFileDialog list(510 186 620 410))
+\a saveAsCdsLibFileDialog->Save->value = t
+\a saveAsGroupDialog->saveAsCdsLibText->value = "cds.lib"
+\a nrSetCurrentWindow(saveAsGroupDialog)
+\a saveAsGroupDialog->okButton->value = t
+\a nrSetWindowVisibility(cdsLibEditor "hide")
+\a exit(0)

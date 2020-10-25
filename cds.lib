@@ -1,0 +1,8 @@
+# File Created by  at Wed Oct 23 17:36:51 2019
+# assisted by CdsLibEditor
+SOFTINCLUDE /software/cadence/installs/IC617/share/cdssetup/dfII/cds.lib
+SOFTINCLUDE /software/cadence/installs/IC617/share/cdssetup/hdl/cds.lib
+SOFTINCLUDE /software/cadence/installs/IC617/share/cdssetup/pic/cds.lib
+SOFTINCLUDE /software/cadence/installs/IC617/share/cdssetup/sg/cds.lib
+DEFINE gpdk045 /software/cadence/gpdk045_v_4_0/gpdk045
+DEFINE MyLib /software/cadence/users/user22/Desktop/MyLib

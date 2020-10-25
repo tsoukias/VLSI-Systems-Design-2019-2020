@@ -1,0 +1,7 @@
+DynLatchOpAmp
+
+DynLatchOpAmp
+	nmos1v$$4
+	pmos1v$$5
+	pmos1v$$6
+
