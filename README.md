@@ -17,7 +17,7 @@ The project consists of 10 transistors in total, 5 of which are p-MOS and the ot
 * **Outp**: is the "positive" output.
 * **Outn**: is the "negative" output.
 
-![schematic](https://github.com/tsoukias/VLSI-Systems-Design-2019-2020/blob/master/Graphs_Results/CADs/Schematic.png)
+![schematic](https://github.com/tsoukias/VLSI-Systems-Design-2019-2020/blob/main/Graphs_Results/CADs/Schematic.png)
 
 ### 2. Symbol
 
@@ -25,7 +25,7 @@ The project consists of 10 transistors in total, 5 of which are p-MOS and the ot
 
 The symbol of this particular IC is quite similar to the symbol of a common Comparator or of an Operational Amplifier only modified to include additional pins in our circuit.
 
-![schematic symbol](https://github.com/tsoukias/VLSI-Systems-Design-2019-2020/blob/master/Graphs_Results/CADs/Symbol.png)
+![schematic symbol](https://github.com/tsoukias/VLSI-Systems-Design-2019-2020/blob/main/Graphs_Results/CADs/Symbol.png)
 
 ### 3. Working Principle
 
@@ -42,7 +42,7 @@ So in order to be able to control our circuit and select the appropriate transis
 
 So the whole circuit looks like this:
 
-![testbench_schematic](https://github.com/tsoukias/VLSI-Systems-Design-2019-2020/Graphs_Results/CADs/Testbench.png)
+![testbench_schematic](https://github.com/tsoukias/VLSI-Systems-Design-2019-2020/blob/main/Graphs_Results/CADs/Testbench.png)
 
 The reason why these input sources were selected is because with this specific combination of parameters we obtain 2 sine waves between the values 0-1V which are always greater than one another except for their crossing-point.
 
@@ -50,7 +50,7 @@ The reason why these input sources were selected is because with this specific c
 
 Whereas the plotting of all the variables together gives us:
 
-![plot_all](https://github.com/tsoukias/VLSI-Systems-Design-2019-2020/Graphs_Results/plots/All_white.png)
+![plot_all](https://github.com/tsoukias/VLSI-Systems-Design-2019-2020/blob/main/Graphs_Results/plots/All_white.png)
 
 So having all the necessary plots we can easily understand the operation of the circuit. When **Vinp > Vinn** is applied then **Outp = 1V** and **Outn =! CLK**, that is, the corresponding output of the larger input permanently has the value of 1V at its output while the other output gives the clock reverse pulse. So for **Vinn > Vinp** we have **Outn = 1V** and **Outp =! CLK**.
 
@@ -61,12 +61,12 @@ So having all the necessary plots we can easily understand the operation of the 
 The optimization of the circuit is mainly aimed at reducing the spikes that appear in the clock switches at the outputs. To do this, we changed the sizes of p-MOS and n-MOS with different values each time from 120 nm to 960 nm in p-MOS. However, the improvement in spike reduction was minimal to negative in some modifications, so we concluded that n-MOS would remain at 120nm and p-MOS at 240nm beyond 1 p-MOS which is not connected to power and it drives inputs from 2 n-MOSs and not some outputs which means it doesn't necessarily have to be the same size as the rest.
 
 We also changed clock and input values from 20MHz and 1MHz to 200MHz and 10MHz respectively, up to 2GHz and 100MHz. What has been observed is that while the circuit works satisfactorily with a 20MHz clock when it is increased to 200MHz and 2GHz the circuit was unable to follow these input changes.
-![plot_all_2GHz](https://github.com/tsoukias/VLSI-Systems-Design-2019-2020/Graphs_Results/TESTs/Freq100MHz_white.png)
+![plot_all_2GHz](https://github.com/tsoukias/VLSI-Systems-Design-2019-2020/blob/main/Graphs_Results/TESTs/Freq100MHz_white.png)
 
 ### 5. Physical Layout
 
 ---
 
 The physical design of the circuit was designed to initially look as much with the schematic as possible in order to facilitate its design and subsequently in as few poly-silicon paths as possible to reduce line resistance. The final circuit is as follows:
-<p align="center"><img src="https://github.com/tsoukias/VLSI-Systems-Design-2019-2020/Graphs_Results/CADs/physical_final.png"></p>
+<p align="center"><img src="https://github.com/tsoukias/VLSI-Systems-Design-2019-2020/blob/main/Graphs_Results/CADs/physical_final.png"></p>
 
