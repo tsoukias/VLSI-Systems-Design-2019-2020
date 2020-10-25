@@ -3,7 +3,7 @@
 
 The project was done with [Cadence Virtuoso](https://www.cadence.com/en_US/home/tools/custom-ic-analog-rf-design/layout-design/virtuoso-layout-suite.html) program with the student licenses that Cadence provides to our University and in collaboration with [Vasileios Amoiridis](https://github.com/vamoirid)
 
-### 1. Scematic Layout
+### 1. Schematic Layout
 
 ---
 
